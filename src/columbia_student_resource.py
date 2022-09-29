@@ -16,9 +16,10 @@ class ColumbiaStudentResource:
         h = os.environ.get("DBHOST")
 
         conn = pymysql.connect(
-            user=usr,
-            password=pw,
-            host=h,
+            user='admin',
+            password='4355Sasha2056!',
+            # host='localhost',
+            host='e6156.cwjkexlxpxly.us-east-1.rds.amazonaws.com',
             cursorclass=pymysql.cursors.DictCursor,
             autocommit=True
         )
